@@ -8,16 +8,17 @@
     font-size: 25px;
     border-radius: 5px;
     border: 3px groove @colorF;
-    
+    color: @colorC;
+    font-family:@fontTitle;
     &:hover {
       background: @colorC;
-      
+      color: @colorB;
+    } 
     }
-    a{
-      color: @colorC;
-      text-decoration:none;
-      &:hover{
-        color: @colorB;
-      }
+
+    .flex(@justify,@align){
+      display:flex;
+      justify-content:@justify;
+      align-items: @align;
     }
-  }
+  
