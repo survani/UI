@@ -1,48 +1,45 @@
-.navBar{
-display:flex;
-width:98%;
-margin: 1%;
-background: @colorA;
+.navBar {
+	display: flex;
+	width: 98%;
+	margin: 1%;
+	background: @colorA;
 
-.logo{
-    width:33%;
-    margin:1%;
-    margin:1%;
-    text-decoration: underline overline @colorF;
-    font-size: 50px;
-    color:@colorB;
-    text-align:center;
-    margin-top:2%;
-    font-family:@fontTitle;
+	.logo {
+		width: 33%;
+		margin: 1%;
+		margin: 1%;
+		text-decoration: underline overline @colorF;
+		font-size: 50px;
+		color: @colorB;
+		text-align: center;
+		margin-top: 2%;
+		font-family: @fontTitle;
+	}
 
-};
+	.buttons {
+		width: 33%;
+		margin: 1%;
+		button {
+			.btn();
+		}
+	}
 
-.buttons{
-    width: 33%;
-    margin: 1%;
-    button{
-        .btn();    
-    };
-};
+	.nav {
+		width: 33%;
+		margin: 1%;
 
-.nav{
-    width: 33%;
-    margin:1%;
-    
-    nav{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        a{
-            margin:1%;
-            text-decoration: underline overline @colorF;
-            font-size: 25px;
-            color:@colorB;
-            cursor:grabbing;
-            font-family:@fontTitle;
-        };
-    };
-
-
-};
-};
+		nav {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			a {
+				margin: 1%;
+				text-decoration: underline overline @colorF;
+				font-size: 25px;
+				color: @colorB;
+				cursor: grabbing;
+				font-family: @fontTitle;
+			}
+		}
+	}
+}
