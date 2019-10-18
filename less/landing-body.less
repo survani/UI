@@ -1,34 +1,140 @@
 .header {
-  background-color: burlywood;
+  background-image: url(https://images.pexels.com/photos/143580/pexels-photo-143580.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   padding: 15rem;
+  background-size: cover;
+  text-align: center;
   h2 {
+    color: @colorB;
     font-size: 4.5rem;
+    text-transform: uppercase;
+    padding-bottom: 0;
+    margin: 0;
+    text-shadow: 9px 2px 8px rgb(0, 0, 0);
+  }
+  p {
+    font-size: 2.5rem;
+    color: @colorB;
+    margin-top: 1.5rem;
+    text-shadow: 9px 2px 7px rgb(0, 0, 0);
   }
 }
 .landing-page {
   font-size: 1.9rem;
+  .landing-btn {
+    font-size: 1.4rem;
+    padding: 12px 25px;
+    font-weight: 900;
+    background: @colorB;
+    color: @colorA;
+    overflow: hidden;
+    border-radius: 7px;
+    border: none;
+    position: relative;
+    z-index: 9;
+    margin-left: 1.5rem;
+  }
 }
-
 
 .companies-display-conatainer {
   display: flex;
   justify-content: space-between;
+  padding: 1.5rem;
+  margin: 3.5rem 0 3.5rem 3.5rem;
 
   .box-company {
+    //? Make sure to add media querie here so the horizontal bar d
     background-image: url(https://5studios.net/themes/laapp/img/logos/6.png);
     padding: 0rem 8rem 6rem 15rem;
     background-repeat: no-repeat;
   }
 }
-.jobs-display-container {
-  //? Handles all the bg, padding --
-  background: grey;
-  .jobs-title {
-      text-align: center;
-  }
-  .box-jobs {
+
+//* job content here
+.jobs-content {
+  background-color: @colorF;
+
+  h1 {
     display: flex;
-    justify-content: space-between;
-    flex-flow: column;
+    justify-content: center;
+    padding-top: 5rem;
+  }
+  .jobs-main-title {
+    color: @colorB;
+  }
+
+  .job-box {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding-bottom: 7rem;
+    .box {
+      width: 20%;
+      height: 250px;
+      background: @colorB;
+      margin: 20px 2.5%;
+      color: @colorA;
+      border-radius: 1rem;
+      .jobs-text-title {
+        text-align: start;
+        font-size: 2rem;
+        margin: 1rem 0 2rem 4rem;
+      }
+      .feature-icon-people {
+        display: flex;
+        justify-content: flex-start;
+        margin: 2rem 0 2rem 4rem;
+      }
+      .material-icons {
+        font-size: 8rem;
+      }
+    }
   }
 }
+//* job content here [end]
+
+//* feature content here
+.feature-content {
+  h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+  }
+  .feature-main-title {
+    color: @colorA;
+  }
+
+  .feature-box {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding-bottom: 7rem;
+    .box {
+      width: 20%;
+      height: 250px;
+      margin: 20px 2.5%;
+      color: @colorA;
+      .feature-text-title {
+        text-align: center;
+        font-size: 2rem;
+        margin: 2rem 0 1rem 0;
+      }
+      .feature-text-paragraph {
+        text-align: center;
+      }
+      .feature-icon-people {
+        display: flex;
+        justify-content: center;
+      }
+      .material-icons {
+        font-size: 5rem;
+      }
+    }
+  }
+}
+//* feature content here [end]
+
+//? What does each comment mean?
+//--------------------------------------------
+//! Important Comment: It may break the styling of the website. Becareful to edit any of that code.
+//? Questions or Changes that may need to be changed.
+//* Personal Note: Must add your name to the start of the comment for example: [Giovani: I added the following code to improve the accessibilty of this line of code]

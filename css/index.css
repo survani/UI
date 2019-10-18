@@ -358,34 +358,124 @@ template {
   font-family: 'Merriweather', serif;
 }
 .header {
-  background-color: burlywood;
+  background-image: url(https://images.pexels.com/photos/143580/pexels-photo-143580.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   padding: 15rem;
+  background-size: cover;
+  text-align: center;
 }
 .header h2 {
+  color: #F2F4F3;
   font-size: 4.5rem;
+  text-transform: uppercase;
+  padding-bottom: 0;
+  margin: 0;
+  text-shadow: 9px 2px 8px #000000;
+}
+.header p {
+  font-size: 2.5rem;
+  color: #F2F4F3;
+  margin-top: 1.5rem;
+  text-shadow: 9px 2px 7px #000000;
 }
 .landing-page {
   font-size: 1.9rem;
 }
+.landing-page .landing-btn {
+  font-size: 1.4rem;
+  padding: 12px 25px;
+  font-weight: 900;
+  background: #F2F4F3;
+  color: #171717;
+  overflow: hidden;
+  border-radius: 7px;
+  border: none;
+  position: relative;
+  z-index: 9;
+  margin-left: 1.5rem;
+}
 .companies-display-conatainer {
   display: flex;
   justify-content: space-between;
+  padding: 1.5rem;
+  margin: 3.5rem 0 3.5rem 3.5rem;
 }
 .companies-display-conatainer .box-company {
   background-image: url(https://5studios.net/themes/laapp/img/logos/6.png);
   padding: 0rem 8rem 6rem 15rem;
   background-repeat: no-repeat;
 }
-.jobs-display-container {
-  background: grey;
+.jobs-content {
+  background-color: #ff822e;
 }
-.jobs-display-container .jobs-title {
+.jobs-content h1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+}
+.jobs-content .jobs-main-title {
+  color: #F2F4F3;
+}
+.jobs-content .job-box {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  padding-bottom: 7rem;
+}
+.jobs-content .job-box .box {
+  width: 20%;
+  height: 250px;
+  background: #F2F4F3;
+  margin: 20px 2.5%;
+  color: #171717;
+  border-radius: 1rem;
+}
+.jobs-content .job-box .box .jobs-text-title {
+  text-align: start;
+  font-size: 2rem;
+  margin: 1rem 0 2rem 4rem;
+}
+.jobs-content .job-box .box .feature-icon-people {
+  display: flex;
+  justify-content: flex-start;
+  margin: 2rem 0 2rem 4rem;
+}
+.jobs-content .job-box .box .material-icons {
+  font-size: 8rem;
+}
+.feature-content h1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+}
+.feature-content .feature-main-title {
+  color: #171717;
+}
+.feature-content .feature-box {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  padding-bottom: 7rem;
+}
+.feature-content .feature-box .box {
+  width: 20%;
+  height: 250px;
+  margin: 20px 2.5%;
+  color: #171717;
+}
+.feature-content .feature-box .box .feature-text-title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem 0 1rem 0;
+}
+.feature-content .feature-box .box .feature-text-paragraph {
   text-align: center;
 }
-.jobs-display-container .box-jobs {
+.feature-content .feature-box .box .feature-icon-people {
   display: flex;
-  justify-content: space-between;
-  flex-flow: column;
+  justify-content: center;
+}
+.feature-content .feature-box .box .material-icons {
+  font-size: 5rem;
 }
 * {
   box-sizing: border-box;
@@ -428,22 +518,19 @@ a {
   text-decoration: none;
 }
 .container-landing {
-  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
 }
 .navbar-container {
-  border-bottom: 1px solid #eaeaeb;
-  margin-bottom: 1rem;
   justify-content: space-between;
-  border-bottom: 2px solid #f1f1f1;
-  background-color: #f6f6f6;
+  background-color: #F2F4F3;
   display: flex;
   flex-flow: wrap;
 }
 .navbar-container h1 {
   font-size: 3rem;
   margin-left: 24px;
+  color: #171717;
 }
 .navbar-container ul {
   display: flex;
@@ -454,11 +541,13 @@ a {
   margin-left: 3rem;
   font-size: 1.6rem;
   list-style: none;
+  color: #171717;
 }
 .navbar-container ul .landing-btn {
+  font-size: 1.4rem;
   padding: 12px 25px;
-  font-weight: 500;
-  background: #6e7dab;
+  font-weight: 900;
+  background: #ff822e;
   color: #F2F4F3;
   overflow: hidden;
   border-radius: 7px;
@@ -466,4 +555,16 @@ a {
   position: relative;
   z-index: 9;
   margin-left: 1.5rem;
+}
+footer {
+  justify-content: space-between;
+  background-color: #575366;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+footer p {
+  font-size: 2rem;
+  margin-left: 24px;
+  color: #F2F4F3;
 }
