@@ -362,6 +362,7 @@ template {
   padding: 15rem;
   background-size: cover;
   text-align: center;
+  background-position: center;
 }
 .header h2 {
   color: #F2F4F3;
@@ -393,16 +394,29 @@ template {
   z-index: 9;
   margin-left: 1.5rem;
 }
-.companies-display-conatainer {
-  display: flex;
-  justify-content: space-between;
-  padding: 1.5rem;
-  margin: 3.5rem 0 3.5rem 3.5rem;
+.landing-page .landing-btn:hover {
+  background-color: #ff822e;
+  color: #F2F4F3;
 }
-.companies-display-conatainer .box-company {
-  background-image: url(https://5studios.net/themes/laapp/img/logos/6.png);
-  padding: 0rem 8rem 6rem 15rem;
-  background-repeat: no-repeat;
+.companies-content {
+  background-color: #171717;
+}
+.companies-content .company-box {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+.companies-content .company-box .box {
+  margin: 0;
+}
+.companies-content .company-box .box .company-logo {
+  margin-right: 1.5rem;
+  width: 250px;
+  vertical-align: middle;
+}
+.companies-content .company-box .box .company-logo:hover {
+  transform: scale(1.1, 1.1);
+  transition: all 0.3s ease-in;
 }
 .jobs-content {
   background-color: #ff822e;
@@ -411,9 +425,11 @@ template {
   display: flex;
   justify-content: center;
   padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 .jobs-content .jobs-main-title {
   color: #F2F4F3;
+  margin: 0;
 }
 .jobs-content .job-box {
   display: flex;
@@ -429,6 +445,11 @@ template {
   color: #171717;
   border-radius: 1rem;
 }
+.jobs-content .job-box .box:hover {
+  transform: scale(1.2, 1.2);
+  transition: all 0.3s ease-in;
+  color: #6e7dab;
+}
 .jobs-content .job-box .box .jobs-text-title {
   text-align: start;
   font-size: 2rem;
@@ -441,6 +462,23 @@ template {
 }
 .jobs-content .job-box .box .material-icons {
   font-size: 8rem;
+}
+.jobs-content .job-box .box .job-button {
+  font-size: 1.4rem;
+  padding: 12px 25px;
+  font-weight: 900;
+  background: #6e7dab;
+  color: #F2F4F3;
+  overflow: hidden;
+  border-radius: 7px;
+  border: none;
+  position: relative;
+  z-index: 9;
+  margin-left: 3.5rem;
+}
+.jobs-content .job-box .box .job-button:hover {
+  color: #F2F4F3;
+  background-color: #171717;
 }
 .feature-content h1 {
   display: flex;

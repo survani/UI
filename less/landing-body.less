@@ -3,6 +3,7 @@
   padding: 15rem;
   background-size: cover;
   text-align: center;
+  background-position: center;
   h2 {
     color: @colorB;
     font-size: 4.5rem;
@@ -32,20 +33,31 @@
     position: relative;
     z-index: 9;
     margin-left: 1.5rem;
+    &:hover{
+      background-color: @colorF;
+      color: @colorB;
+    }
   }
 }
 
-.companies-display-conatainer {
-  display: flex;
-  justify-content: space-between;
-  padding: 1.5rem;
-  margin: 3.5rem 0 3.5rem 3.5rem;
-
-  .box-company {
-    //? Make sure to add media querie here so the horizontal bar d
-    background-image: url(https://5studios.net/themes/laapp/img/logos/6.png);
-    padding: 0rem 8rem 6rem 15rem;
-    background-repeat: no-repeat;
+.companies-content {
+  background-color: @colorA;
+  .company-box{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    .box {
+     margin: 0;
+     .company-logo{
+       margin-right: 1.5rem;
+       width: 250px;
+       vertical-align: middle;
+       &:hover{
+        transform: scale(1.1, 1.1);
+        transition: all 0.3s ease-in;
+       }
+     }
+    }
   }
 }
 
@@ -57,9 +69,11 @@
     display: flex;
     justify-content: center;
     padding-top: 5rem;
+    padding-bottom: 5rem;
   }
   .jobs-main-title {
     color: @colorB;
+    margin: 0;
   }
 
   .job-box {
@@ -74,6 +88,11 @@
       margin: 20px 2.5%;
       color: @colorA;
       border-radius: 1rem;
+      &:hover {
+        transform: scale(1.2, 1.2);
+        transition: all 0.3s ease-in;
+        color: @colorC;
+      }
       .jobs-text-title {
         text-align: start;
         font-size: 2rem;
@@ -86,6 +105,23 @@
       }
       .material-icons {
         font-size: 8rem;
+      }
+      .job-button {
+        font-size: 1.4rem;
+        padding: 12px 25px;
+        font-weight: 900;
+        background: @colorC;
+        color: @colorB;
+        overflow: hidden;
+        border-radius: 7px;
+        border: none;
+        position: relative;
+        z-index: 9;
+        margin-left: 3.5rem;
+        &:hover {
+          color: @colorB;
+          background-color: @colorA;
+        }
       }
     }
   }
