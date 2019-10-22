@@ -55,6 +55,7 @@
        &:hover{
         transform: scale(1.1, 1.1);
         transition: all 0.3s ease-in;
+        cursor: pointer;
        }
      }
     }
@@ -78,7 +79,7 @@
 
   .job-box {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     padding-bottom: 7rem;
     .box {
@@ -167,7 +168,73 @@
     }
   }
 }
-//* feature content here [end]
+
+//! About CSS Styles 
+
+.header-about {
+  background-image: url(https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  padding: 15rem;
+  background-size: cover;
+  text-align: center;
+  background-position: center;
+  h2 {
+    color: @colorB;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    padding-bottom: 0;
+    margin: 0;
+    text-shadow: 9px 2px 8px rgb(0, 0, 0);
+  }
+  p {
+    font-size: 2.5rem;
+    color: @colorB;
+    margin-top: 1.5rem;
+    text-shadow: 9px 2px 7px rgb(0, 0, 0);
+  }
+}
+
+//* team member: Section to display full team
+.about-team-people {
+  margin: 0 auto; //! Centers this section do not delete!
+  max-width: 1200px; //! Width must be present for margin to work.
+  width: 100%;
+  .team-heading-text {
+    text-align: center;
+    font-size: 3.8rem;
+    text-transform: uppercase;
+    padding-top: 5rem;
+  }
+  .bio-team-box {
+    display: flex;
+    .team-content-style (row-reverse nowrap);
+    justify-content: space-around;
+    .text-content {
+      margin: 7rem 0rem 3rem 0rem;
+    }
+    .img-box {
+      margin: 7rem 0rem 3rem 0rem;
+      img {
+        .img-round(50% 0 50% 50% );
+      }
+    }
+  }
+}
+
+.bio-team-box-two {
+  display: flex;
+  .team-content-style (row nowrap);
+  justify-content: space-around;
+  .text-content {
+    margin: 7rem 0rem 3rem 0rem;
+  }
+  .img-box {
+    margin: 7rem 0rem 3rem 0rem;
+    img {
+      .img-round(0 50% 50% 50% );
+    }
+  }
+}
+
 
 //? What does each comment mean?
 //--------------------------------------------

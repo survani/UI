@@ -417,6 +417,7 @@ template {
 .companies-content .company-box .box .company-logo:hover {
   transform: scale(1.1, 1.1);
   transition: all 0.3s ease-in;
+  cursor: pointer;
 }
 .jobs-content {
   background-color: #ff822e;
@@ -433,7 +434,7 @@ template {
 }
 .jobs-content .job-box {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   padding-bottom: 7rem;
 }
@@ -514,6 +515,66 @@ template {
 }
 .feature-content .feature-box .box .material-icons {
   font-size: 5rem;
+}
+.header-about {
+  background-image: url(https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  padding: 15rem;
+  background-size: cover;
+  text-align: center;
+  background-position: center;
+}
+.header-about h2 {
+  color: #F2F4F3;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  padding-bottom: 0;
+  margin: 0;
+  text-shadow: 9px 2px 8px #000000;
+}
+.header-about p {
+  font-size: 2.5rem;
+  color: #F2F4F3;
+  margin-top: 1.5rem;
+  text-shadow: 9px 2px 7px #000000;
+}
+.about-team-people {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+.about-team-people .team-heading-text {
+  text-align: center;
+  font-size: 3.8rem;
+  text-transform: uppercase;
+  padding-top: 5rem;
+}
+.about-team-people .bio-team-box {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  justify-content: space-around;
+}
+.about-team-people .bio-team-box .text-content {
+  margin: 7rem 0rem 3rem 0rem;
+}
+.about-team-people .bio-team-box .img-box {
+  margin: 7rem 0rem 3rem 0rem;
+}
+.about-team-people .bio-team-box .img-box img {
+  border-radius: 50% 0 50% 50%;
+}
+.bio-team-box-two {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+.bio-team-box-two .text-content {
+  margin: 7rem 0rem 3rem 0rem;
+}
+.bio-team-box-two .img-box {
+  margin: 7rem 0rem 3rem 0rem;
+}
+.bio-team-box-two .img-box img {
+  border-radius: 0 50% 50% 50%;
 }
 * {
   box-sizing: border-box;

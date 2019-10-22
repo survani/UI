@@ -23,3 +23,14 @@
     }
 
     //! Giovani's Mixins ----
+
+    //* Used for the way the team pictures and text are displayed. 
+    .team-content-style (@flex-flow) {
+      display: flex;
+      flex-flow: @flex-flow;
+      justify-content: space-around;
+    }
+
+    .img-round (@radius) {
+      border-radius:@radius;
+    }
