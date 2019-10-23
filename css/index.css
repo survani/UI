@@ -562,6 +562,9 @@ template {
 .about-team-people .bio-team-box .img-box img {
   border-radius: 50% 0 50% 50%;
 }
+.about-team-people .bio-team-box .img-box img:hover {
+  filter: grayscale(100%);
+}
 .bio-team-box-two {
   display: flex;
   flex-flow: row nowrap;
@@ -575,6 +578,9 @@ template {
 }
 .bio-team-box-two .img-box img {
   border-radius: 0 50% 50% 50%;
+}
+.bio-team-box-two .img-box img:hover {
+  filter: grayscale(100%);
 }
 * {
   box-sizing: border-box;
@@ -625,6 +631,9 @@ a {
   background-color: #F2F4F3;
   display: flex;
   flex-flow: wrap;
+}
+.navbar-container img {
+  margin: 1rem 0 1rem 0;
 }
 .navbar-container h1 {
   font-size: 3rem;

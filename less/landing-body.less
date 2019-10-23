@@ -33,7 +33,7 @@
     position: relative;
     z-index: 9;
     margin-left: 1.5rem;
-    &:hover{
+    &:hover {
       background-color: @colorF;
       color: @colorB;
     }
@@ -42,22 +42,22 @@
 
 .companies-content {
   background-color: @colorA;
-  .company-box{
+  .company-box {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-evenly;
     .box {
-     margin: 0;
-     .company-logo{
-       margin-right: 1.5rem;
-       width: 250px;
-       vertical-align: middle;
-       &:hover{
-        transform: scale(1.1, 1.1);
-        transition: all 0.3s ease-in;
-        cursor: pointer;
-       }
-     }
+      margin: 0;
+      .company-logo {
+        margin-right: 1.5rem;
+        width: 250px;
+        vertical-align: middle;
+        &:hover {
+          transform: scale(1.1, 1.1);
+          transition: all 0.3s ease-in;
+          cursor: pointer;
+        }
+      }
     }
   }
 }
@@ -169,7 +169,7 @@
   }
 }
 
-//! About CSS Styles 
+//! About CSS Styles
 
 .header-about {
   background-image: url(https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
@@ -214,7 +214,10 @@
     .img-box {
       margin: 7rem 0rem 3rem 0rem;
       img {
-        .img-round(50% 0 50% 50% );
+        .img-round(50% 0 50% 50%);
+        &:hover {
+          filter: grayscale(100%);
+        }
       }
     }
   }
@@ -230,11 +233,13 @@
   .img-box {
     margin: 7rem 0rem 3rem 0rem;
     img {
-      .img-round(0 50% 50% 50% );
+      .img-round(0 50% 50% 50%);
+      &:hover {
+        filter: grayscale(100%);
+      }
     }
   }
 }
-
 
 //? What does each comment mean?
 //--------------------------------------------
