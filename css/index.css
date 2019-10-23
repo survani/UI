@@ -364,6 +364,11 @@ template {
   text-align: center;
   background-position: center;
 }
+@media (max-width: 360px) {
+  .header {
+    padding: 7rem;
+  }
+}
 .header h2 {
   color: #F2F4F3;
   font-size: 4.5rem;
@@ -440,8 +445,12 @@ template {
 .jobs-content h1 {
   display: flex;
   justify-content: center;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding: 5rem 0 5rem 5rem;
+}
+@media (max-width: 360px) {
+  .jobs-content h1 {
+    text-align: center;
+  }
 }
 .jobs-content .jobs-main-title {
   color: #F2F4F3;
@@ -479,6 +488,11 @@ template {
 @media (max-width: 800px) {
   .jobs-content .job-box .box {
     width: 35%;
+  }
+}
+@media (max-width: 360px) {
+  .jobs-content .job-box .box {
+    width: 70%;
   }
 }
 .jobs-content .job-box .box:hover {
