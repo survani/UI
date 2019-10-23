@@ -1,0 +1,59 @@
+//* Giovani: nav bar styles
+
+.navbar-container {
+  //! Flex Box used here
+  justify-content: space-between;
+  background-color:@colorB;
+  display: flex;
+  flex-flow: wrap;
+    @media @landingphone {
+      justify-content: center;
+    }
+    @media @landingtablet {
+      justify-content: center;
+    }
+    img {
+    margin: 1rem 0 1rem 0;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-left: 24px;
+    color: @colorA;
+  }
+
+  ul {
+    //! Flex Box used here
+    display: flex;
+    align-items: center;
+    padding-right: 28px;
+
+    li {
+      margin-left: 3rem;
+      font-size: 1.6rem;
+      list-style: none;
+      color: @colorA;
+    }
+    .landing-btn {
+      font-size: 1.4rem;
+      padding: 12px 25px;
+      font-weight: 900;
+      background: @colorF;
+      color: @colorB;
+      overflow: hidden;
+      border-radius: 7px;
+      border: none;
+      position: relative;
+      z-index: 9;
+      margin-left: 1.5rem;
+    }
+  }
+}
+
+//* Giovani: nav bar styles 
+
+//? What does each comment mean?
+//--------------------------------------------
+//! Important Comment: It may break the styling of the website. Becareful to edit any of that code. 
+//? Questions or Changes that may need to be changed.
+//* Personal Note: Must add your name to the start of the comment for example: [Giovani: I added the following code to improve the accessibilty of this line of code]

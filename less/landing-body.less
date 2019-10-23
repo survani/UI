@@ -1,0 +1,312 @@
+.header {
+  background-image: url(https://images.pexels.com/photos/143580/pexels-photo-143580.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  padding: 15rem;
+  background-size: cover;
+  text-align: center;
+  background-position: center;
+  h2 {
+    color: @colorB;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    padding-bottom: 0;
+    margin: 0;
+    text-shadow: 9px 2px 8px rgb(0, 0, 0);
+  }
+  p {
+    font-size: 2.5rem;
+    color: @colorB;
+    margin-top: 1.5rem;
+    text-shadow: 9px 2px 7px rgb(0, 0, 0);
+  }
+}
+.landing-page {
+  font-size: 1.9rem;
+  .landing-btn {
+    font-size: 1.4rem;
+    padding: 12px 25px;
+    font-weight: 900;
+    background: @colorB;
+    color: @colorA;
+    overflow: hidden;
+    border-radius: 7px;
+    border: none;
+    position: relative;
+    z-index: 9;
+    margin-left: 1.5rem;
+    &:hover {
+      background-color: @colorF;
+      color: @colorB;
+    }
+    @media @landingphone {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.companies-content {
+  background-color: @colorA;
+  @media @landingphone {
+    display: none;
+  }
+  @media @landingtablet {
+    display: none;
+  }
+  .company-box {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    .box {
+      margin: 0;
+      .company-logo {
+        margin-right: 1.5rem;
+        width: 250px;
+        vertical-align: middle;
+        &:hover {
+          transform: scale(1.1, 1.1);
+          transition: all 0.3s ease-in;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+//* job content here
+.jobs-content {
+  background-color: @colorF;
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .jobs-main-title {
+    color: @colorB;
+    margin: 0;
+    @media @landingphone {
+      font-size: 2.5rem;
+    }
+    @media @landingtablet {
+      font-size: 2.5rem;
+    }
+  }
+
+  .job-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 7rem;
+    .box {
+      width: 20%;
+      height: 250px;
+      background: @colorB;
+      margin: 20px 2.5%;
+      color: @colorA;
+      border-radius: 1rem;
+      @media @landingphone {
+        width: 35%;
+      }
+      @media @landingtablet {
+        width: 35%;
+      }
+      &:hover {
+        transform: scale(1.2, 1.2);
+        transition: all 0.3s ease-in;
+        color: @colorC;
+      }
+      .jobs-text-title {
+        text-align: start;
+        font-size: 2rem;
+        margin: 1rem 0 2rem 4rem;
+      }
+      .feature-icon-people {
+        display: flex;
+        justify-content: flex-start;
+        margin: 2rem 0 2rem 4rem;
+      }
+      .material-icons {
+        font-size: 8rem;
+      }
+      .job-button {
+        font-size: 1.4rem;
+        padding: 12px 25px;
+        font-weight: 900;
+        background: @colorC;
+        color: @colorB;
+        overflow: hidden;
+        border-radius: 7px;
+        border: none;
+        position: relative;
+        z-index: 9;
+        margin-left: 3.5rem;
+        &:hover {
+          color: @colorB;
+          background-color: @colorA;
+        }
+      }
+    }
+  }
+}
+//* job content here [end]
+
+//* feature content here
+.feature-content {
+  h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+  }
+  .feature-main-title {
+    color: @colorA;
+  }
+
+  .feature-box {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding-bottom: 7rem;
+    @media @landingphone {
+      flex-wrap: wrap;
+    }
+    @media @landingtablet {
+      flex-wrap: wrap;
+    }
+    .box {
+      width: 20%;
+      height: 250px;
+      margin: 20px 2.5%;
+      color: @colorA;
+      @media @landingphone {
+        width: 57%;
+      }
+      @media @landingtablet {
+        width: 57%;
+      }
+
+      .feature-text-title {
+        text-align: center;
+        font-size: 2rem;
+        margin: 2rem 0 1rem 0;
+      }
+      .feature-text-paragraph {
+        text-align: center;
+      }
+      .feature-icon-people {
+        display: flex;
+        justify-content: center;
+      }
+      .material-icons {
+        font-size: 5rem;
+      }
+    }
+  }
+}
+
+//! About CSS Styles
+
+.header-about {
+  background-image: url(https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  padding: 15rem;
+  background-size: cover;
+  text-align: center;
+  background-position: center;
+  h2 {
+    color: @colorB;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    padding-bottom: 0;
+    margin: 0;
+    text-shadow: 9px 2px 8px rgb(0, 0, 0);
+  }
+  p {
+    font-size: 2.5rem;
+    color: @colorB;
+    margin-top: 1.5rem;
+    text-shadow: 9px 2px 7px rgb(0, 0, 0);
+  }
+}
+
+//* team member: Section to display full team
+.about-team-people {
+  margin: 0 auto; //! Centers this section do not delete!
+  max-width: 1200px; //! Width must be present for margin to work.
+  width: 100%;
+  .team-heading-text {
+    text-align: center;
+    font-size: 3.8rem;
+    text-transform: uppercase;
+    padding-top: 5rem;
+  }
+  .bio-team-box {
+    display: flex;
+    .team-content-style (row-reverse nowrap);
+    @media @landingphone {
+      .team-content-style(column-reverse nowrap);
+    }
+    @media @landingtablet {
+      .team-content-style(column-reverse nowrap);
+      align-items: center;
+      }
+    justify-content: space-around;
+    .text-content {
+      margin: 7rem 0rem 3rem 0rem;
+      @media @landingphone {
+        margin: 0rem 0rem 0rem 0rem;
+        text-align: center;
+      }
+      @media @landingdesktop {
+        margin: 7rem 0rem 0rem 1rem;
+        text-align: center;
+      }
+    }
+    .img-box {
+      margin: 7rem 0rem 3rem 0rem;
+      img {
+        .img-round(50% 0 50% 50%);
+        &:hover {
+          filter: grayscale(100%);
+        }
+      }
+    }
+  }
+}
+
+.bio-team-box-two {
+  display: flex;
+  .team-content-style (row nowrap);
+  justify-content: space-around;
+  @media @landingphone {
+  .team-content-style(column-reverse nowrap);
+  }
+  @media @landingtablet {
+    .team-content-style(column-reverse nowrap);
+    align-items: center;
+    }
+  .text-content {
+    margin: 7rem 0rem 3rem 0rem;
+    @media @landingphone {
+      margin: 0rem 0rem 0rem 0rem;
+      text-align: center;
+    }
+    @media @landingtablet {
+      margin: 0rem 0rem 0rem 0rem;
+      text-align: center;
+      }
+  }
+  .img-box {
+    margin: 7rem 0rem 3rem 0rem;
+    img {
+      .img-round(0 50% 50% 50%);
+      &:hover {
+        filter: grayscale(100%);
+      }
+    }
+  }
+}
+
+//? What does each comment mean?
+//--------------------------------------------
+//! Important Comment: It may break the styling of the website. Becareful to edit any of that code.
+//? Questions or Changes that may need to be changed.
+//* Personal Note: Must add your name to the start of the comment for example: [Giovani: I added the following code to improve the accessibilty of this line of code]

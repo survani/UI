@@ -21,4 +21,21 @@
       justify-content:@justify;
       align-items: @align;
     }
-  
+
+    //! Giovani's Mixins ----
+
+    //* Used for the way the team pictures and text are displayed. 
+    .team-content-style (@flex-flow) {
+      display: flex;
+      flex-flow: @flex-flow;
+      justify-content: space-around;
+    }
+
+    .img-round (@radius) {
+      border-radius:@radius;
+    }
+
+//! @media 
+  @landingphone: ~"(max-width: 500px)";
+  @landingtablet: ~"(max-width: 800px)";
+  @landingdesktop: ~"(max-width: 1000px)";
