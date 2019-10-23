@@ -39,7 +39,7 @@
     }
     @media @landingphone {
       margin-bottom: 2rem;
-   }
+    }
   }
 }
 
@@ -47,7 +47,10 @@
   background-color: @colorA;
   @media @landingphone {
     display: none;
- }
+  }
+  @media @landingtablet {
+    display: none;
+  }
   .company-box {
     display: flex;
     flex-wrap: nowrap;
@@ -83,7 +86,10 @@
     margin: 0;
     @media @landingphone {
       font-size: 2.5rem;
-   }
+    }
+    @media @landingtablet {
+      font-size: 2.5rem;
+    }
   }
 
   .job-box {
@@ -100,7 +106,10 @@
       border-radius: 1rem;
       @media @landingphone {
         width: 35%;
-     }
+      }
+      @media @landingtablet {
+        width: 35%;
+      }
       &:hover {
         transform: scale(1.2, 1.2);
         transition: all 0.3s ease-in;
@@ -159,7 +168,10 @@
     padding-bottom: 7rem;
     @media @landingphone {
       flex-wrap: wrap;
-   }
+    }
+    @media @landingtablet {
+      flex-wrap: wrap;
+    }
     .box {
       width: 20%;
       height: 250px;
@@ -167,7 +179,10 @@
       color: @colorA;
       @media @landingphone {
         width: 57%;
-     }
+      }
+      @media @landingtablet {
+        width: 57%;
+      }
 
       .feature-text-title {
         text-align: center;
