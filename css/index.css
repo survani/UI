@@ -398,8 +398,18 @@ template {
   background-color: #ff822e;
   color: #F2F4F3;
 }
+@media (max-width: 500px) {
+  .landing-page .landing-btn {
+    margin-bottom: 2rem;
+  }
+}
 .companies-content {
   background-color: #171717;
+}
+@media (max-width: 500px) {
+  .companies-content {
+    display: none;
+  }
 }
 .companies-content .company-box {
   display: flex;
@@ -432,6 +442,11 @@ template {
   color: #F2F4F3;
   margin: 0;
 }
+@media (max-width: 500px) {
+  .jobs-content .jobs-main-title {
+    font-size: 2.5rem;
+  }
+}
 .jobs-content .job-box {
   display: flex;
   flex-wrap: wrap;
@@ -445,6 +460,11 @@ template {
   margin: 20px 2.5%;
   color: #171717;
   border-radius: 1rem;
+}
+@media (max-width: 500px) {
+  .jobs-content .job-box .box {
+    width: 35%;
+  }
 }
 .jobs-content .job-box .box:hover {
   transform: scale(1.2, 1.2);
@@ -495,11 +515,21 @@ template {
   justify-content: space-evenly;
   padding-bottom: 7rem;
 }
+@media (max-width: 500px) {
+  .feature-content .feature-box {
+    flex-wrap: wrap;
+  }
+}
 .feature-content .feature-box .box {
   width: 20%;
   height: 250px;
   margin: 20px 2.5%;
   color: #171717;
+}
+@media (max-width: 500px) {
+  .feature-content .feature-box .box {
+    width: 57%;
+  }
 }
 .feature-content .feature-box .box .feature-text-title {
   text-align: center;
@@ -631,6 +661,11 @@ a {
   background-color: #F2F4F3;
   display: flex;
   flex-flow: wrap;
+}
+@media (max-width: 500px) {
+  .navbar-container {
+    justify-content: center;
+  }
 }
 .navbar-container img {
   margin: 1rem 0 1rem 0;

@@ -37,11 +37,17 @@
       background-color: @colorF;
       color: @colorB;
     }
+    @media @landingphone {
+      margin-bottom: 2rem;
+   }
   }
 }
 
 .companies-content {
   background-color: @colorA;
+  @media @landingphone {
+    display: none;
+ }
   .company-box {
     display: flex;
     flex-wrap: nowrap;
@@ -75,6 +81,9 @@
   .jobs-main-title {
     color: @colorB;
     margin: 0;
+    @media @landingphone {
+      font-size: 2.5rem;
+   }
   }
 
   .job-box {
@@ -89,6 +98,9 @@
       margin: 20px 2.5%;
       color: @colorA;
       border-radius: 1rem;
+      @media @landingphone {
+        width: 35%;
+     }
       &:hover {
         transform: scale(1.2, 1.2);
         transition: all 0.3s ease-in;
@@ -145,11 +157,18 @@
     flex-wrap: nowrap;
     justify-content: space-evenly;
     padding-bottom: 7rem;
+    @media @landingphone {
+      flex-wrap: wrap;
+   }
     .box {
       width: 20%;
       height: 250px;
       margin: 20px 2.5%;
       color: @colorA;
+      @media @landingphone {
+        width: 57%;
+     }
+
       .feature-text-title {
         text-align: center;
         font-size: 2rem;
