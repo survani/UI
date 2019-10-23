@@ -241,9 +241,24 @@
   .bio-team-box {
     display: flex;
     .team-content-style (row-reverse nowrap);
+    @media @landingphone {
+      .team-content-style(column-reverse nowrap);
+    }
+    @media @landingtablet {
+      .team-content-style(column-reverse nowrap);
+      align-items: center;
+      }
     justify-content: space-around;
     .text-content {
       margin: 7rem 0rem 3rem 0rem;
+      @media @landingphone {
+        margin: 0rem 0rem 0rem 0rem;
+        text-align: center;
+      }
+      @media @landingdesktop {
+        margin: 7rem 0rem 0rem 1rem;
+        text-align: center;
+      }
     }
     .img-box {
       margin: 7rem 0rem 3rem 0rem;
@@ -261,8 +276,23 @@
   display: flex;
   .team-content-style (row nowrap);
   justify-content: space-around;
+  @media @landingphone {
+  .team-content-style(column-reverse nowrap);
+  }
+  @media @landingtablet {
+    .team-content-style(column-reverse nowrap);
+    align-items: center;
+    }
   .text-content {
     margin: 7rem 0rem 3rem 0rem;
+    @media @landingphone {
+      margin: 0rem 0rem 0rem 0rem;
+      text-align: center;
+    }
+    @media @landingtablet {
+      margin: 0rem 0rem 0rem 0rem;
+      text-align: center;
+      }
   }
   .img-box {
     margin: 7rem 0rem 3rem 0rem;
